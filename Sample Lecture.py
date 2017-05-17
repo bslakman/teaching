@@ -135,6 +135,8 @@ print sigma_post(sample_data, 2.0)
 
 
 # This is an ideal situation, in reality you probably don't have conjugate priors and you don't know anything about your posterior distribution. You can deal with this using **posterior sampling**. See this [blog post](http://twiecki.github.io/blog/2015/11/10/mcmc-sampling/)
+# 
+# Markov Chain Monte Carlo (MCMC) is a set of methods for doing posterior sampling. Basically, it involves making an initial guess on your posterior parameters, and moving around in the parameter space to parameters which explain your data better than the previous guess (by calculating prior * likelihood using new parameters). We choose whether or not to accept the new parameter and this becomes a sample of our posterior distribution.
 
 # ## Putting it together with hypothesis testing
 
